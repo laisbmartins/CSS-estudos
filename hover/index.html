@@ -4,6 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exemplo com hover</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 32px;
+        background-color: #f3f4f6;
+        color: #1f2937;
+      }
+      section {
+        background-color: white;
+        padding: 24px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+      }
+      h2 {
+        margin-bottom: 0px;
+        font-size: 25px;
+      }
+      button {
+        cursor: pointer;
+      }
+      .botao-cor {
+        background-color: #2563eb;
+        padding: 12px, 20px;
+        border-radius: 8px;
+        border: nome;
+        color: white;
+        transition: background-color 0.3s;
+      }
+      .botao-cor:hover {
+        background-color: #1e40af;
+      }
+      .link {
+        text-decoration: none;
+        transition: color 03s;
+      }
+      .link:hover {
+        text-decoration: underline;
+        color: blue;
+      }
+      .card-hamburguer {
+        width: 240px;
+        padding: 10px;
+        border: 1px solid #d8d8d8;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: box-shadow 0.3s;
+      }
+      .card-hamburguer:hover {
+        box-shadow: 0px 20px 50px rgb(161, 161, 161);
+      }
+      .botao-zoom {
+        background-color: #15803d;
+        padding: 12px 24px;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .botao-zoom:hover {
+        transform: scale(1.3);
+      }
+      .card-movimento {
+        border: 1px solid #c4c3c3;
+        width: 240px;
+        padding: 10px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in;
+      }
+
+      .card-movimento:hover {
+        transform: translatey(-9px);
+      }
+      .imagem {
+        width: 260px;
+        transition: opacity 0.3s ease-in;
+      }
+      .imagem:hover {
+        opacity: 0.3;
+      }
+    </style>
   </head>
   <body>
     <h1>Exemplos com hover</h1>
@@ -18,16 +98,16 @@
       <a href="" class="link">Ir para informacoes de contato</a>
     </section>
     <section>
-      <h2>3. Adicionar som</h2>
-      <div>
-        <h3>Hamburgue artesanal</h3>
+      <h2>3. Adicionar sombra</h2>
+      <div class="card-hamburguer">
+        <h3>Hamburguer artesanal</h3>
         <p>Pão, hamburgue e alface</p>
         <p>R$ 60,00</p>
       </div>
     </section>
     <section>
       <h2>4. Aumentar o botão</h2>
-      <button class="Botao zoom">Adicionar ao carrinho</button>
+      <button class="botao-zoom">Adicionar ao carrinho</button>
     </section>
     <section>
       <h2>5. Mover um card para cima</h2>
@@ -39,7 +119,7 @@
     </section>
     <section>
       <h2>6.Alterar a transparencia</h2>
-      <img src="../img/celular1.png" alt="" classe="imagem" />
+      <img src="../img/celular1.png" alt="" class="imagem" />
     </section>
   </body>
 </html>
